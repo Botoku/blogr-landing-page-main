@@ -48,7 +48,7 @@ header{
     display: flex;
 }
 
-.top {
+.top,.bottom {
     background-image: url(images/illustration-editor-desktop.svg);
     background-size: 600px;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ header{
     font-size: 2rem;
 }
 .top p, .bottom p{
-    color: hsl(208, 49%, 24%)
+    color: hsl(207, 13%, 34%);
 }
 h1{
     color:hsl(237, 23%, 32%);
@@ -88,7 +88,7 @@ h1{
     color:#fff;
     margin: 6em 0;
     border-radius: 0 5em 0 5em;
-
+  
   
     justify-content: space-between;
 }
@@ -328,5 +328,16 @@ button{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 650px){
+    body{
+        transform: scale(0.7)
+
+    }
+    .container{
+        width: 100vw;
+        background-color: red;
+    }
 }
 
